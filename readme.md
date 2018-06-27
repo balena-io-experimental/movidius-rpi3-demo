@@ -36,3 +36,7 @@ Once all the models are compiled you can just navigate to the `ncappzoo` directo
 If you want to check that you Pi is looking at the right things, you can put the application into preview mode by adding an Environment Variable called `PREVIEW` set with an value. This will cause the application to snap a still photo and the serve that photo on `<YOUR_DEVICE_IP>:8080/preview.jpg`
 
 To return to recognition mode simply delete the `PREVIEW` variable on your dashboard.
+
+### Rebuilding the Base Image
+
+If you want to rebuild the base image or even just check the things that are included in it, you can find the repo here: https://github.com/resin-io-playground/movidius-rpi3-baseimage . It should be **noted** that currently this dockerfile needs to be built on an emulated machine or locally on an RPI3. To build it on the resin build servers you will need to do `git push resin master:resin-emulated`
